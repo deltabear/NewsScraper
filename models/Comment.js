@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 
 // Using the Schema constructor, create a new UserSchema object
 // This is similar to a Sequelize model
-var ScraperSchema = new Schema({
+var CommentSchema = new Schema({
   // `name` must be unique and of type String
   name: {
     type: String,
@@ -19,7 +19,6 @@ var ScraperSchema = new Schema({
 });
 
 // This creates our model from the above schema, using mongoose's model method
-var Scraper = mongoose.model("Scraper", ScraperSchema);
+var Comment = mongoose.model("Comment", CommentSchema);
 
-// Export the Scraper model
-module.exports = Scraper;
+module.exports = Comment;
